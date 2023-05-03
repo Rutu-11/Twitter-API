@@ -1,11 +1,11 @@
 const Twitter = require('twitter-lite');
 
 // Twitter API keys and access tokens
-const consumer_key = "RutujaR11111653807613103026185";
-const consumer_secret = "****bL328K";
-const access_token_key = "AAAAAAAAAAAAAAAAAAAAAKzanAEAAAAAHu3UBR%2FCh9dPASNYfGG6jiDpY%2FQ%3DMuXn8mHazRC1iNAfHOlFYVSh6FCLzdEWKBNKrglWsfycIImHZD";
-const access_token_secret = "6rcGaYRZZZVyzTmra0X8EfBJPY6D8dI5rSRxeEgTVRWK8";
-// 1653804830828245018-Uo6066yYZTwGLPqxgubUjJHU33CNeq
+const consumer_key = process.env.consumer_key;
+const consumer_secret = process.env.consumer_secret
+const access_token_key = process.env.access_token_key
+const access_token_secret = process.env.access_token_secret
+
 // Authenticate with the Twitter API
 const client = new Twitter({
   consumer_key,
